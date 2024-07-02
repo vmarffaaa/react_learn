@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useToggle } from './hooks/CustomHooks';
+import './App.css'
 
 function App() {
+  const [isSidebarOpen, toggleSidebar] = useToggle();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <h1>Toggle Button</h1>
+        <button
+            className={isSidebarOpen ? 'true' : 'false'}
+            onClick={toggleSidebar}>
+          {isSidebarOpen ? "True" : "False"}
+        </button>
+      </div>
   );
 }
 
