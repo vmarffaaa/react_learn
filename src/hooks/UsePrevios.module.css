@@ -1,0 +1,43 @@
+.increment{
+    width: 140px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: darksalmon;
+    font-size: 20px;
+    font-weight: 600;
+    color: #25140f;
+    transition: 0.5s;
+
+}
+.increment:hover{
+    background-color: #985e4b;
+    color: #b6b1b1;
+}
+.current_value{
+
+}
+.previous_value{
+
+}
+.box{
+    width: 45vw;
+    height: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    margin-top: 180px;
+    margin-left: 390px;
+    border-radius: 17px;
+}
+.flex{
+    width: 48vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 21px;
+    color: #3a2119;
+}
