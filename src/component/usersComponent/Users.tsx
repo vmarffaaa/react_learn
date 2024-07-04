@@ -3,12 +3,12 @@ import User from '../userComponent/User';
 import { IUser } from '../../models/IUser';
 import styles from './Users.module.css'
 
-interface UsersProps {
+interface IProps {
     users: IUser[];
     onClick: (userId: number) => void;
 }
 
-class Users extends Component<UsersProps> {
+class Users extends Component<IProps> {
     render() {
         const { users, onClick } = this.props;
 
