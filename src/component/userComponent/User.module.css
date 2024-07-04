@@ -1,0 +1,32 @@
+.user_block>*{
+    margin-left: 40px;
+    width: 400px;
+}
+.user_block{
+    width: 450px;
+    background-color: #f0ece2;
+    height: 48vh;
+    border-radius: 10px;
+    box-shadow: 16px 19px 29px -23px rgba(97,85,68,0.67);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+.button{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #c5ad90;
+    margin-left: 60px;
+    color: rgba(45, 39, 32, 0.87);
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.button:hover{
+    background-color: #947f65;
+    transition: 0.65s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

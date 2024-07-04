@@ -1,0 +1,49 @@
+.users_block{
+    flex: 1;
+    overflow: auto;
+    margin-left: 300px;
+    margin-bottom: 45px;
+    width: 500px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 85vw;
+    margin-left: 50px;
+}
+.posts_block {
+    width: 480px;
+    position: sticky;
+    top: 120px;
+}
+
+body{
+    color: #2d2720;
+    background-color: #fcfbfa;
+}
+.user_post{
+    width: 480px;
+    margin-left: 15px;
+}
+.likes_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.post_body{
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.title{
+    margin-left: 30px;
+}
+.post{
+    width: 480px;
+    height: 130vh;
+    background-color: #f0ece2;
+    border-radius: 10px;
+    box-shadow: 16px 19px 29px -23px rgba(97,85,68,0.67);
+}
+
