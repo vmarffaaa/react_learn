@@ -1,0 +1,17 @@
+.user_box{
+    margin-left: 100px;
+    width: 650px;
+    margin-top: 45px;
+    background-color: #e5f0fc;
+    margin-bottom: 40px;
+    height: 260px;
+    align-content: center;
+    border-radius: 20px;
+    color: #23375d;
+}
+.user_box>p{
+    font-size: 18px;
+}
+.user_box>h2{
+    font-size: 24px;
+}

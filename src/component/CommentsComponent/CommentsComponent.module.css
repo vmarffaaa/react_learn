@@ -1,0 +1,22 @@
+.comment_box{
+    margin-left: 100px;
+    width: 650px;
+    margin-top: 45px;
+    background-color: #e5f0fc;
+    margin-bottom: 40px;
+    height: 300px;
+    align-content: center;
+    border-radius: 20px;
+    color: #23375d;
+}
+p,h2{
+    margin-left: 40px;
+    margin-right: 30px;
+}
+h1{
+    margin-left: 120px;
+    color: #23375d;
+}
+.comment_box>p{
+    font-size: 18px;
+}
