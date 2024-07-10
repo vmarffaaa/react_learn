@@ -19,7 +19,7 @@ const UsersComponent = () => {
             <div>
                 <div>
                     {users.map((user) =>
-                        <div className={styles.user_box}>
+                        <div key={user.id} className={styles.user_box}>
                             <h2> {user.id}: {user.username} </h2>
                             <p><b>Name:</b> {user.name}</p>
                             <p><b>Email:</b> {user.email}</p>

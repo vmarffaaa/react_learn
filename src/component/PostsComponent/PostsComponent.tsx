@@ -19,7 +19,7 @@ const PostsComponent = () => {
             <div>
                 <div>
                     {posts.map((post) =>
-                        <div className={styles.post_box}>
+                        <div key={post.id} className={styles.post_box}>
                             <h2> {post.id}: {post.title} </h2>
                             <p><b>User Id:</b> {post.userId}</p>
                             <p><b>Post Id:</b> {post.id}</p>

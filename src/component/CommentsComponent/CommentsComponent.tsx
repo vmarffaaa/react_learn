@@ -20,7 +20,7 @@ const CommentsComponent = () => {
             <div>
                 <div>
                     {comments.map((comment) =>
-                        <div className={styles.comment_box}>
+                        <div key={comment.id} className={styles.comment_box}>
                             <h2> {comment.id}: {comment.name} </h2>
                             <p><b>Post Id:</b> {comment.id}</p>
                             <p><b>Email of {comment.name}:</b> {comment.email}</p>
