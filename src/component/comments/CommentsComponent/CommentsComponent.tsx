@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {IComment} from "../../models/IComment";
-import {commentApiService} from "../../services/api.service";
+import {IComment} from "../../../models/IComment";
+import {commentApiService} from "../../../services/api.service";
 import styles from "./CommentsComponent.module.css"
 import CommentComponent from "../CommentComponent/CommentComponent";
 

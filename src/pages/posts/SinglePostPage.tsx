@@ -2,7 +2,7 @@ import React, {FC, useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {postApiService,} from "../../services/api.service";
 import {IComment} from "../../models/IComment";
-import CommentComponent from "../../component/CommentComponent/CommentComponent";
+import CommentComponent from "../../component/comments/CommentComponent/CommentComponent";
 import styles from "./PostsPageStyle.module.css";
 
 const SinglePostPage:FC = () => {
