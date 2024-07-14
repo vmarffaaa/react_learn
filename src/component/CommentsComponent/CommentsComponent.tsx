@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {IComment} from "../../models/IComment";
-import {getAllComments} from "../../services/api.service";
+import {commentApiService} from "../../services/api.service";
 import styles from "./CommentsComponent.module.css"
+import CommentComponent from "../CommentComponent/CommentComponent";
 
 
 
@@ -9,9 +10,8 @@ const CommentsComponent = () => {
     const [comments, setComments] = useState<IComment[]>([]);
 
     useEffect(() => {
-        getAllComments().then((value: IComment[]) => {
-            setComments([...value]);
-        });
+       commentApiService.getAllComments().
+       then(value => setComments(value.data))
     },[]);
 
 
@@ -19,13 +19,7 @@ const CommentsComponent = () => {
         <div>
             <div>
                 <div>
-                    {comments.map((comment) =>
-                        <div key={comment.id} className={styles.comment_box}>
-                            <h2> {comment.id}: {comment.name} </h2>
-                            <p><b>Post Id:</b> {comment.id}</p>
-                            <p><b>Email of {comment.name}:</b> {comment.email}</p>
-                            <p><b>Comment:</b> {comment.body}</p>
-                        </div>)}
+                    {comments.map((comment) => (<CommentComponent key={comment.id} comment={comment}/>))}
                 </div>
             </div>
         </div>
