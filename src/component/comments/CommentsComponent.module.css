@@ -1,0 +1,19 @@
+.comments_block{
+    width: 48%;
+    height: 300px;
+    color: #1f2a3f;
+    border: #1f2a3f 2px solid;
+    background-color: #edf2fa;
+    margin-left: 90px;
+    margin-bottom: 35px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.comments_block>h2,p{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 70%;
+}
+.comments_block>p{
+    font-size: 18px;
+}
