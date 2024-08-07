@@ -11,7 +11,7 @@ const PostsComponent:   FC= () => {
     let dispatch = useAppDispatch();
 
     useEffect(() => {
-        dispatch(postActions.loadPosts);
+        dispatch(postActions.loadPosts());
     }, []);
 
 
