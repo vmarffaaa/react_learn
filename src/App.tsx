@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {FC, useEffect} from 'react';
 import './App.css';
+import {Outlet} from "react-router-dom";
+import HeaderComponent from "./components/HeaderComponent";
+import {postService, userService} from "./services/api.services";
 
-function App() {
+const App: FC = () => {
+    useEffect(() => {
+        userService.getUsers().then(value => console.log(value.data))
+        postService.getPosts().then(value => console.log(value.data))
+    },[]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeaderComponent/>
+      <Outlet/>
     </div>
   );
 }
